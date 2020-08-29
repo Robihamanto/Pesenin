@@ -10,6 +10,7 @@ import SwiftUI
 
 struct MenuItemDetail: View {
     
+    @EnvironmentObject var order: Order
     var item: MenuItem
     
     var body: some View {
@@ -28,15 +29,22 @@ struct MenuItemDetail: View {
             Text(item.description)
             .padding()
             
+            Button("Tambahkan ke Pesanan") {
+                self.order.add(item: self.item)
+            }.font(.headline)
+            
+            
             Spacer()
         }.navigationBarTitle(Text(item.name), displayMode: .inline)
     }
 }
 
 struct MenuItemDetail_Previews: PreviewProvider {
+    static let order = Order()
+    
     static var previews: some View {
         NavigationView {
-            MenuItemDetail(item: MenuItem.example)
+            MenuItemDetail(item: MenuItem.example).environmentObject(order)
         }
     }
 }

@@ -20,6 +20,8 @@
 		F476859224FA0E48000814E0 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476858E24FA0E48000814E0 /* Order.swift */; };
 		F476859424FA17C1000814E0 /* MenuItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476859324FA17C1000814E0 /* MenuItemRow.swift */; };
 		F476859624FA23AA000814E0 /* MenuItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476859524FA23AA000814E0 /* MenuItemDetail.swift */; };
+		F476859824FA2C14000814E0 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476859724FA2C14000814E0 /* OrderView.swift */; };
+		F476859A24FA2DDB000814E0 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476859924FA2DDB000814E0 /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		F476858E24FA0E48000814E0 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		F476859324FA17C1000814E0 /* MenuItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemRow.swift; sourceTree = "<group>"; };
 		F476859524FA23AA000814E0 /* MenuItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetail.swift; sourceTree = "<group>"; };
+		F476859724FA2C14000814E0 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		F476859924FA2DDB000814E0 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 			children = (
 				F476856924FA0E37000814E0 /* AppDelegate.swift */,
 				F476856B24FA0E37000814E0 /* SceneDelegate.swift */,
+				F476859724FA2C14000814E0 /* OrderView.swift */,
+				F476859924FA2DDB000814E0 /* AppView.swift */,
 				F476858C24FA0E48000814E0 /* Helper.swift */,
 				F476858B24FA0E48000814E0 /* menu.json */,
 				F476858D24FA0E48000814E0 /* Menu.swift */,
@@ -233,7 +239,9 @@
 				F476859424FA17C1000814E0 /* MenuItemRow.swift in Sources */,
 				F476856E24FA0E37000814E0 /* ContentView.swift in Sources */,
 				F476859024FA0E48000814E0 /* Helper.swift in Sources */,
+				F476859824FA2C14000814E0 /* OrderView.swift in Sources */,
 				F476859624FA23AA000814E0 /* MenuItemDetail.swift in Sources */,
+				F476859A24FA2DDB000814E0 /* AppView.swift in Sources */,
 				F476859124FA0E48000814E0 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
