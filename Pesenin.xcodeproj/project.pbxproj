@@ -19,6 +19,7 @@
 		F476859124FA0E48000814E0 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476858D24FA0E48000814E0 /* Menu.swift */; };
 		F476859224FA0E48000814E0 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476858E24FA0E48000814E0 /* Order.swift */; };
 		F476859424FA17C1000814E0 /* MenuItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476859324FA17C1000814E0 /* MenuItemRow.swift */; };
+		F476859624FA23AA000814E0 /* MenuItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476859524FA23AA000814E0 /* MenuItemDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		F476858D24FA0E48000814E0 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		F476858E24FA0E48000814E0 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		F476859324FA17C1000814E0 /* MenuItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemRow.swift; sourceTree = "<group>"; };
+		F476859524FA23AA000814E0 /* MenuItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				F476858E24FA0E48000814E0 /* Order.swift */,
 				F476856D24FA0E37000814E0 /* ContentView.swift */,
 				F476859324FA17C1000814E0 /* MenuItemRow.swift */,
+				F476859524FA23AA000814E0 /* MenuItemDetail.swift */,
 				F476856F24FA0E3A000814E0 /* Assets.xcassets */,
 				F476857424FA0E3A000814E0 /* LaunchScreen.storyboard */,
 				F476857724FA0E3A000814E0 /* Info.plist */,
@@ -230,6 +233,7 @@
 				F476859424FA17C1000814E0 /* MenuItemRow.swift in Sources */,
 				F476856E24FA0E37000814E0 /* ContentView.swift in Sources */,
 				F476859024FA0E48000814E0 /* Helper.swift in Sources */,
+				F476859624FA23AA000814E0 /* MenuItemDetail.swift in Sources */,
 				F476859124FA0E48000814E0 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
