@@ -19,6 +19,13 @@ struct CheckoutView: View {
     @State private var isUseLoyaltyDetails = false
     @State private var loyaltyNumbers = ""
     @State private var tipsAmount = 1
+    @State private var isShowingPaymentAlert = false
+    
+    var totalPrice: Double {
+        let total = Double(order.total)
+        let tip = total / 100 * Double(Self.tips[tipsAmount])
+        return total + tip
+    }
     
     var body: some View {
         Form {
@@ -46,13 +53,16 @@ struct CheckoutView: View {
                 }.pickerStyle(SegmentedPickerStyle())
             }
             
-            Section ( header: Text("Total: $102")) {
+            Section ( header: Text("Total: $\(totalPrice, specifier: "%.2f")")) {
                 Button("Konfirmasi Pembayaran") {
-                    
+                    self.isShowingPaymentAlert.toggle()
                 }
             }
             
         }.navigationBarTitle("Bayar", displayMode: .inline)
+            .alert(isPresented: $isShowingPaymentAlert) {
+                Alert(title: Text("Pembayaran dikonfirmasi"), message: Text("Total pesanan Rp\(totalPrice, specifier: "%2.f") - Terima Kasih"), dismissButton: .default(Text("Ok")))
+        }
     }
 }
 
