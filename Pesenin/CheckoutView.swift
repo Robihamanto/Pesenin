@@ -47,7 +47,7 @@ struct CheckoutView: View {
             }
             
             Section ( header: Text("Total: $102")) {
-                Button("Selesaikan Pembayaran") {
+                Button("Konfirmasi Pembayaran") {
                     
                 }
             }
