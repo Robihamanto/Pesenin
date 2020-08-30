@@ -23,7 +23,7 @@ struct MenuItemRow: View {
                 
                 VStack(alignment: .leading) {
                     Text(item.name).font(.headline)
-                    Text("$\(item.price)")
+                    Text("Rp \(item.price)")
                 }.layoutPriority(1)
                 
                 Spacer()

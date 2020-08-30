@@ -23,7 +23,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationBarTitle("Menu")
+            .navigationBarTitle("Pilihan Menu")
             .listStyle(GroupedListStyle())
         }
     }
