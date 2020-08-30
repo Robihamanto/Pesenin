@@ -29,7 +29,7 @@ struct OrderView: View {
                     NavigationLink(destination: CheckoutView()) {
                         Text("Bayar")
                     }
-                }
+                }.disabled(order.items.isEmpty)
             }
             .navigationBarTitle("Pesanan Saya")
             .listStyle(GroupedListStyle())
