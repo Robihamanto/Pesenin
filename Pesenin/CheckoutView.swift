@@ -14,12 +14,14 @@ struct CheckoutView: View {
     
     static let paymentTypes = ["Cash", "Pesenin Point", "OVO", "ShopeePay", "Gopay", "Dana", "Linkaja"]
     static let tips = [10, 15, 20, 25, 0]
+    static let pickUpTime = ["Secepatnya", "Malam Ini", "Besok Pagi"]
     
-    @State private var paymentType = 2
+    @State private var paymentType = 0
     @State private var isUseLoyaltyDetails = false
     @State private var loyaltyNumbers = ""
-    @State private var tipsAmount = 1
+    @State private var tipsAmount = 0
     @State private var isShowingPaymentAlert = false
+    @State private var pickUpAt = 0
     
     var totalPrice: Double {
         let total = Double(order.total)
@@ -51,6 +53,15 @@ struct CheckoutView: View {
                         Text("\(Self.tips[$0])")
                     }
                 }.pickerStyle(SegmentedPickerStyle())
+            }
+            
+            Section(header: Text("Kapan mau diambil?")) {
+                Picker("Waktu ambil", selection: $pickUpAt) {
+                    ForEach(0 ..< Self.pickUpTime.count) {
+                        Text(Self.pickUpTime[$0])
+                    }
+                }.pickerStyle(SegmentedPickerStyle())
+                
             }
             
             Section ( header: Text("Total: $\(totalPrice, specifier: "%.2f")").font(.largeTitle)) {
