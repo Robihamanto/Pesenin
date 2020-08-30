@@ -31,7 +31,13 @@ struct MenuItemDetail: View {
             
             Button("Tambahkan ke Pesanan") {
                 self.order.add(item: self.item)
-            }.font(.headline)
+            }
+            .padding(15)
+            .background(Color.green)
+            .foregroundColor(.white)
+            .cornerRadius(10)
+            .font(.headline)
+            
             
             
             Spacer()
