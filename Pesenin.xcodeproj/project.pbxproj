@@ -23,6 +23,7 @@
 		F476859824FA2C14000814E0 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476859724FA2C14000814E0 /* OrderView.swift */; };
 		F476859A24FA2DDB000814E0 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476859924FA2DDB000814E0 /* AppView.swift */; };
 		F476859C24FA324F000814E0 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476859B24FA324F000814E0 /* CheckoutView.swift */; };
+		F47685AB24FCAD19000814E0 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47685AA24FCAD19000814E0 /* FavouriteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		F476859724FA2C14000814E0 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		F476859924FA2DDB000814E0 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		F476859B24FA324F000814E0 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		F47685AA24FCAD19000814E0 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			children = (
 				F476859924FA2DDB000814E0 /* AppView.swift */,
 				F47685A024FBF124000814E0 /* Checkout */,
+				F47685A924FC00C6000814E0 /* Favourite */,
 				F476859F24FBF11D000814E0 /* Menu */,
 				F47685A524FBF1AD000814E0 /* Menu Details */,
 				F47685A824FBF31A000814E0 /* Order */,
@@ -228,6 +231,14 @@
 				F476859724FA2C14000814E0 /* OrderView.swift */,
 			);
 			path = Order;
+			sourceTree = "<group>";
+		};
+		F47685A924FC00C6000814E0 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				F47685AA24FCAD19000814E0 /* FavouriteView.swift */,
+			);
+			path = Favourite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +353,7 @@
 				F476859824FA2C14000814E0 /* OrderView.swift in Sources */,
 				F476859624FA23AA000814E0 /* MenuItemDetail.swift in Sources */,
 				F476859A24FA2DDB000814E0 /* AppView.swift in Sources */,
+				F47685AB24FCAD19000814E0 /* FavouriteView.swift in Sources */,
 				F476859124FA0E48000814E0 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
