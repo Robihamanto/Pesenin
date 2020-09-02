@@ -64,7 +64,7 @@ struct CheckoutView: View {
                 
             }
             
-            Section ( header: Text("Total: $\(totalPrice, specifier: "%.2f")").font(.largeTitle)) {
+            Section ( header: Text("Total: Rp \(totalPrice, specifier: "%.2f")").font(.largeTitle)) {
                 Button("Konfirmasi Pembayaran") {
                     self.isShowingPaymentAlert.toggle()
                 }
