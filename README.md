@@ -7,6 +7,8 @@ Pesenin
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
 
+
+An app for order food with SwiftUI.
 ## 🏃‍♂️ Getting Started
 
 ``` bash
@@ -19,9 +21,6 @@ open Talents.workspace # or xed .
 ```
 
 ## 👨🏻‍💻 Pesenin Design
-
-An app for order food with SwiftUI
-
   <p float="left">
     <img src="./Preview/pesenin-menu-list-scene-light.png" width="20%"/>
     <img src="./Preview/pesenin-menu-detail-scene-light.png" width="18%"/> 
@@ -29,7 +28,6 @@ An app for order food with SwiftUI
     <img src="./Preview/pesenin-order-scene-light.png" width="18%"/> 
     <img src="./Preview/pesenin-checkout-scene-light.png" width="18%"/> 
   </p>
-  
   
   <p float="left">
     <img src="./Preview/pesenin-menu-list-scene-dark.png" width="20%"/>
