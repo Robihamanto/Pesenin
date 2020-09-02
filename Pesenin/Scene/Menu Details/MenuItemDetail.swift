@@ -73,7 +73,8 @@ struct MenuItemDetail: View {
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .padding(10)
-        }.navigationBarTitle(Text(item.name), displayMode: .inline)
+        }
+        .navigationBarTitle(Text(item.name), displayMode: .inline)
         .onAppear(perform: fetchIsFavourite)
     }
     

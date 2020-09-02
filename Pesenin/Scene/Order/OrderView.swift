@@ -20,7 +20,7 @@ struct OrderView: View {
                         HStack {
                             Text(item.name)
                             Spacer()
-                            Text("$\(item.price)")
+                            Text("Rp \(item.price)".replacingOccurrences(of: ",", with: "."))
                         }
                     }.onDelete(perform: deleteItems)
                 }
