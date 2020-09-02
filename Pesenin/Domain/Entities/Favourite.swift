@@ -11,6 +11,10 @@ import Foundation
 class Favourite: ObservableObject {
     
     @Published var items = [MenuItem]()
+    
+    func isFavourite(item: MenuItem) -> Bool {
+        return items.contains(item)
+    }
 
     func add(item: MenuItem) {
         items.append(item)
@@ -21,5 +25,7 @@ class Favourite: ObservableObject {
             items.remove(at: index)
         }
     }
+    
+    
 }
 

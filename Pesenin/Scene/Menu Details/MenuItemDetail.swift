@@ -44,7 +44,6 @@ struct MenuItemDetail: View {
                 .cornerRadius(10)
                 .font(.headline)
                 
-                
                 Button(action: {
                     
                     if self.isFavourite {
@@ -75,6 +74,11 @@ struct MenuItemDetail: View {
             .frame(minWidth: 0, maxWidth: .infinity)
             .padding(10)
         }.navigationBarTitle(Text(item.name), displayMode: .inline)
+        .onAppear(perform: fetchIsFavourite)
+    }
+    
+    private func fetchIsFavourite() {
+        self.isFavourite = favourite.isFavourite(item: self.item)
     }
 }
 

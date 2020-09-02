@@ -16,9 +16,11 @@ struct FavouriteView: View {
         NavigationView {
             List {
                 ForEach(favourite.items) { item in
-                    Text(item.name)
+                    MenuItemRow(item: item)
                 }
-            }.navigationBarTitle("Favourite")
+            }
+            .listStyle(GroupedListStyle())
+            .navigationBarTitle("Favourite")
             
         }
     }
