@@ -9,12 +9,15 @@
 import SwiftUI
 
 struct FavouriteView: View {
+    
+    @EnvironmentObject var favourite: Favourite
+    
     var body: some View {
         NavigationView {
             List {
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                Text("Hello, World!")
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                ForEach(favourite.items) { item in
+                    Text(item.name)
+                }
             }.navigationBarTitle("Favourite")
             
         }
@@ -22,7 +25,10 @@ struct FavouriteView: View {
 }
 
 struct FavouriteView_Previews: PreviewProvider {
+    
+    static let favourite = Favourite()
+    
     static var previews: some View {
-        FavouriteView()
+        FavouriteView().environmentObject(favourite)
     }
 }
