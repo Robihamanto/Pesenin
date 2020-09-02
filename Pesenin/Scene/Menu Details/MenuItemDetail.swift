@@ -39,7 +39,7 @@ struct MenuItemDetail: View {
                 }
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .padding(15)
-                .background(Color.green)
+                .background(Color(UIColor.systemGreen))
                 .foregroundColor(.white)
                 .cornerRadius(10)
                 .font(.headline)

@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct MenuItemRow: View {
-    static let colors: [String: Color] = ["D": .purple, "G":.black, "N":.red, "S":.blue, "V":.green]
+    static let colors: [String: UIColor] = ["D": .systemPurple, "G": .systemTeal, "N":.systemRed, "S": .systemBlue, "V": .systemGreen]
     
     var item: MenuItem
     
@@ -33,7 +33,7 @@ struct MenuItemRow: View {
                         .font(.caption)
                         .fontWeight(.black)
                         .padding(5)
-                        .background(Self.colors[restrictions])
+                        .background(Color(Self.colors[restrictions]!))
                         .foregroundColor(.white)
                         .clipShape(Circle())
                 }
